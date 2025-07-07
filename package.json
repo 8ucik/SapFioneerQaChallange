@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "playwright": "^1.53.2",
+    "winston": "^3.17.0"
+  },
+  "name": "sapfioneerqachallange",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.10",
+    "prettier": "^3.6.2"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
