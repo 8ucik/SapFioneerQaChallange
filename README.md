@@ -27,7 +27,12 @@
 1. To run all tests just input into the console:
    > npm run test:all
 2. The tests are set to run _headless_. So no window will be displayed.
-   After the tests are run. The report will be generated and opened in a separate window.
+   After the tests are run with failure. The report will be generated and opened in a separate window.
+3. When finished with success then just run:
+   > npm run test:showReport
+4. There is a folder called `logs` this folder contains logs from each run separated with `Date-time` and warn, debug or info file. As of Today there are no logs dedicated for debug so the file will be empty. The logic may be changed by removing it from `logger.ts` file.
+5. If we would like to clear the logs then just run a command like:
+   > npm run clear:logs
 
 ---
 

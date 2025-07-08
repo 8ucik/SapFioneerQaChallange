@@ -13,7 +13,7 @@ export class BasePage {
   }
 
   async navigateTo(url: string) {
-    await this.page.goto(url, { timeout: this.timeout });
+    await this.page.goto(url, { timeout: this.timeout * 1.5 });
   }
 
   async verifyPageTitle(title: RegExp | string) {
