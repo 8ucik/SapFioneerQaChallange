@@ -14,7 +14,7 @@ export class Common {
   static async clickButtonByRole(page: Page, role: Parameters<Page['getByRole']>[0], name: string) {
     const locator = page.getByRole(role, { name });
     logger.info(loggerMessages.info.clickElement(locator));
-    await locator.click();
+    await locator.first().click();
   }
 
   static async input(locator: Locator, text: string) {

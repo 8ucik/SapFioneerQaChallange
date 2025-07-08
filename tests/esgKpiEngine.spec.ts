@@ -13,19 +13,17 @@ test.describe('[Test 2] Verify ESG KPI Engine page', () => {
   test('As a user I be able to navigate to the ESG KPI Engine page through the top bar', async ({
     page,
   }) => {
-    //arrange
+    // arrange
     const homePage = PageFactory.getHomePage(page);
     const topBar = PageFactory.getTopBar(page);
 
-    //act
+    // act
     await topBar.clickMenuItem('Products');
     await topBar.clickMenuSection([2, 'Finance & ESG']);
     await topBar.clickMenuSubSection('ESG KPI Engine');
 
-    //assert
+    // assert
     await homePage.verifyPageLink(UrlFactory.getUrl('esgKpiEngine'));
     await homePage.verifyPageHeader(headers.esgKpiEngine);
-
-    // Add page for ESG Kpi Engine here
   });
 });

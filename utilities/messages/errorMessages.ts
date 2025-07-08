@@ -4,7 +4,9 @@ export const errorMessages = {
     notFound: 'The requested resource was not found.',
   },
   email: {
-    unexpected: '',
-    notFound: '',
+    unformattedEmail: 'Email must be formatted correctly.',
+    unsupportedEmail:
+      'Please enter a different email address. This form does not accept addresses from gmail.com.',
+    emptyField: 'Please complete this required field.',
   },
 };
