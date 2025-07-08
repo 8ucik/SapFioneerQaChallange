@@ -21,4 +21,5 @@ export default defineConfig({
       use: { ...devices['Desktop Firefox'] },
     },
   ],
+  globalTeardown: './globalSettings/globalTeardown.ts',
 });
