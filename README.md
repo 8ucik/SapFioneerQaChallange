@@ -30,7 +30,7 @@
    After the tests are run with failure. The report will be generated and opened in a separate window.
 3. When finished with success then just run:
    > npm run test:showReport
-4. There is a folder called `logs` this folder contains logs from each run separated with `Date-time` and warn, debug or info file. As of Today there are no logs dedicated for debug so the file will be empty. The logic may be changed by removing it from `logger.ts` file.
+4. There is a folder called `logs` this folder contains logs for runs. These are combined logs which follow a timestamp run. The `globalTeardown` will take care to combine all the logs together into one file with the last timestamp. The file will be called `TestRun_FinalReport_timestamp.log`
 5. If we would like to clear the logs then just run a command like:
    > npm run clear:logs
 
