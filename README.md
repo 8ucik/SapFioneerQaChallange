@@ -9,7 +9,7 @@
 ## 📌 What does it do
 
 > - Verifies navigation and content of the [Sap Fioneer home page](https://www.sapfioneer.com') and content across sections like **Banking**, **Insurance**, **Finance & ESG**, and more.
-> - - Automates interaction with dynamic elements (e.g. dropdowns, buttons, alerts).
+> - Automates interaction with dynamic elements (e.g. dropdowns, buttons, alerts).
 > - Provides reusable utility functions for consistent and clean automation practices.
 
 ---
