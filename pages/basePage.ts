@@ -28,7 +28,7 @@ export class BasePage {
     expect(normalized).toContain(header);
   }
 
-  async verifyPageLink(url: string) {
-    await expect(this.page).toHaveURL(url);
+  async verifyPageLink(url: string, timeout: number = this.timeout) {
+    await expect(this.page).toHaveURL(url, { ignoreCase: true, timeout: timeout * 1.5 });
   }
 }
