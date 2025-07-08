@@ -8,7 +8,9 @@ export const loggerMessages = {
       `Filling ${input} into field: ${fieldName}`,
     elementIsVisible: (elementName: Locator | string) => `Element ${elementName} is visible`,
     textIsVisible: (text: string) => `Text: ${text} is visible`,
+    textIsNotEmpty: (text: string) => `Text ${text} is not empty`,
     pageIsVisible: (page: string) => `Page: ${page} is visible`,
+    gettingText: (elementName: Locator | string) => `Getting text from element: ${elementName}`,
   },
   debug: {
     locatorFound: (elementName: Locator | string) => `Locator found for ${elementName}`,
