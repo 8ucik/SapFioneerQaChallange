@@ -1,20 +1,31 @@
-import { Page } from 'playwright';
 import { Common } from '../utilities/common/common';
-import { expect } from 'playwright/test';
+import { expect, Page } from 'playwright/test';
 
 export class BasePage {
-  readonly page: Page;
+  protected page: Page;
+  readonly timeout: number;
+  readonly delay: number;
 
   constructor(page: Page) {
     this.page = page;
+    this.timeout = 5000;
+    this.delay = this.timeout / 10;
   }
 
   async navigateTo(url: string) {
-    await this.page.goto(url);
+    await this.page.goto(url, { timeout: this.timeout });
   }
 
-  async verifyPageTitle(title: RegExp) {
+  async verifyPageTitle(title: RegExp | string) {
     await expect(this.page).toHaveTitle(title);
+  }
+
+  async verifyPageHeader(header: string) {
+    const text = await Common.getText(this.page, 'h1');
+    Common.textIsNotEmpty(text);
+
+    const normalized = text.replace(/\s+/g, ' ').trim();
+    expect(normalized).toContain(header);
   }
 
   async verifyPageLink(url: string) {
