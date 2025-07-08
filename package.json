@@ -1,0 +1,24 @@
+{
+  "name": "sapfioneerqachallange",
+  "description": "One of those project where you rule the world!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.10",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "playwright": "^1.53.2",
+    "winston": "^3.17.0"
+  },
+  "scripts": {
+    "test:all": "npx playwright test /tests --reporter=html",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clear:logs": "rm -rf logs/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
