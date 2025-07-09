@@ -18,6 +18,7 @@
 
 1. Clone the repository
 2. Run
+   > npx install playwright
    > npm install
 
 ---
