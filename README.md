@@ -19,6 +19,7 @@
 1. Clone the repository
 2. Run
    > npm install
+3. If for some reason a playwright setup is missing:
    > npx install playwright
 
 ---
